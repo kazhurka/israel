@@ -43,7 +43,6 @@
   width: 100%;
   height: auto;
   margin: 0 auto;
-  // object-fit: cover;
 }
 
 .info__wrap {
@@ -95,7 +94,7 @@
     max-width: 430px;
     height: 224px;
 
-    background-image: url("../../img/video-photo.png");
+    background-image: url("../img/video-photo.png");
     background-position: 50%;
     background-size: cover;
   }
