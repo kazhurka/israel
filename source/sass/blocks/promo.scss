@@ -1,0 +1,55 @@
+.promo {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 160px;
+  min-height: 700px;
+  display: flex;
+  padding-top: 20px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.promo b {
+  width: 343px;
+  font-family: $fira-sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo ::after {
+  transform: translate(-50%);
+  bottom: -20px;
+  left: 50%;
+  content: "";
+  width: 76px;
+  height: 131px;
+  position: absolute;
+  background-image: url("../img/scroll-sign.svg");
+}
+
+@media (max-width: $tablet-width) {
+
+  .promo {
+   padding: 0;
+   min-height: 550px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .promo b {
+    width: 288px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .promo ::after {
+    bottom: 90px;
+  }
+}
