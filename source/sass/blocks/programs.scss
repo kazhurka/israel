@@ -1,0 +1,80 @@
+.programs {
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.programs h2 {
+  margin: 0;
+  margin-bottom: 80px;
+  padding-left: 50px;
+
+  list-style: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+  font-family: $montserrat;
+  text-align: left;
+  color: $color-blue;
+  text-transform: uppercase;
+}
+
+
+.programs__container {
+  display: flex;
+}
+
+.programs__tabs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 60px;
+}
+
+.programs__tab button {
+  display: block;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+
+  list-style: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: $fira-sans;
+  color: $color-black;
+
+  background-color: transparent;
+  border: none;
+  opacity: 0.87;
+}
+
+.programs__description {
+  display: none;
+}
+
+.programs__description--active {
+  display: block;
+}
+
+
+.programs h3 {
+  margin: 0;
+
+  list-style: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  font-family: $montserrat;
+  color: $color-blue;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: $tablet-width) {
+  .programs {
+    display: none;
+  }
+}

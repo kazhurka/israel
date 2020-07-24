@@ -1,11 +1,8 @@
 .main-header {
   box-sizing: border-box;
   width: 100%;
-  max-width: 1160px;
   margin: 0 auto;
-  padding-top: 100px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-top: 82px;
 }
 
 .main-header__container {
@@ -13,6 +10,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.main-header__logo {
+  width: 160px;
 }
 
 .main-header a {
@@ -25,7 +26,7 @@
   line-height: 18px;
   font-family: $fira-sans;
   color: $color-black;
-  text-transform: uppercase;
+  text-transform: lowercase;
   text-decoration: none;
 }
 
@@ -34,21 +35,31 @@
 }
 
 .main-header__call-us {
-  padding-top: 20px;
-
+  padding-top: 17px;
+  padding-right: 4px;
   border-bottom: 1px dashed $color-black;
 }
 
-.main-header__phone {
-  padding-top: 20px;
+.main-header__call-us:hover {
+  opacity: 70%;
 }
 
-@media(max-width: $desktop-width) {
-  .main-header {
-    padding-right: 5.5%;
-    padding-left: 5.5%;
-  }
+.main-header__call-us:active {
+  opacity: 50%;
 }
+
+.main-header__phone {
+  padding-top: 17px;
+}
+
+.main-header__phone:hover {
+  opacity: 70%;
+}
+
+.main-header__phone:active {
+  opacity: 50%;
+}
+
 
 @media (max-width: $tablet-width) {
   .main-header__container {
@@ -61,8 +72,6 @@
 
   .main-header {
     padding-top: 20px;
-    padding-right: 10px;
-    padding-left: 15px;
   }
 
   .main-header a {
@@ -89,7 +98,5 @@
 
   .main-header .main-header__call-us {
     min-width: auto;
-
-    font-size: 13px;
   }
 }

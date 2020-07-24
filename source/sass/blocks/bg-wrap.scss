@@ -1,0 +1,57 @@
+.bg-wrap--header {
+  z-index: 1;
+
+  width: 100%;
+  min-height: 400px;
+
+  background-image: url("../img/bg-main.png"), url("../img/town.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 50% 130px, 0 55px;
+  background-size: auto auto, 100% 100%;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-main@2x.png"), url("../img/town@2x.png");
+    background-position: 50% 50px, 0 55px;
+    background-size: 1366px auto, 100% 100%;
+  }
+}
+
+.bg-wrap--info {
+  width: 100%;
+
+  background-image: url("../img/watercolor-bg.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100% 182px;
+}
+
+@media (max-width: $desktop-width) {
+  .bg-wrap--header {
+    background-position: 50% 200px, 0 55px;
+    background-size: 750px auto, 100% 100%;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .bg-wrap--header {
+    min-height: auto;
+
+    background-image: url("../img/bg-main-mobile.png"), url("../img/town-mobile.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% 100px, 0 30px;
+    background-size: auto auto, 100% 589px;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-main-mobile@2x.png"), url("../img/town-mobile@2x.png");
+      background-size: 393px auto, 100% 98%;
+      background-position: 50% 31px, 0 30px;
+    }
+  }
+
+  .bg-wrap--info {
+    background-image: url("../img/about-bg-mobile.png");
+    background-position: 100% 228px;
+  }
+}

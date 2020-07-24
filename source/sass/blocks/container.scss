@@ -1,0 +1,35 @@
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding-right: 110px;
+  padding-left: 110px;
+}
+
+.container--no {
+  padding: 0;
+}
+
+
+@media (max-width: $desktop-width) {
+  .container {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .container--no {
+    padding: 0;
+  }
+
+  .container--header {
+    padding-right: 10px;
+  }
+}

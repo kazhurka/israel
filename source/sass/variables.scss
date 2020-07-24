@@ -1,15 +1,15 @@
 $tablet-width: 767px;
 $mobile-width: 320px;
+$desktop-width: 1199px;
+
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
-$desktop-width: 1199px;
+
 $color-black: #484848;
-$color-blue: #1FC0FC;
-$color-yellow: #FFC341;
-$color-gradient: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);
-$fira-sans: "Fira Sans",
-"Arial",
-sans-serif;
-$montserrat: "Montserrat",
-"Arial",
-sans-serif;
+$color-blue: #1fc0fc;
+$color-yellow: #ffc341;
+$color-white: #ffffff;
+$color-gradient: linear-gradient(108.42deg, #ffc341 20.46%, #ffd701 65.31%);
+
+$fira-sans: "Fira Sans","Arial",sans-serif;
+$montserrat: "Montserrat","Arial",sans-serif;

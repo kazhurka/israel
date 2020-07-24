@@ -10,34 +10,20 @@ body {
   color: $color-black;
 }
 
-.bg-wrap--header {
-  z-index: 1;
 
-  width: 100%;
-  min-height: 400px;
+.visually-hidden {
+  position: absolute;
 
-  background-image: url("../img/girl-main.png"), url("../img/israel.png"), url("../img/town.png");
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: 50% 100px, 50% 230px, 0 55px, ;
-  background-size: auto auto, auto auto, 100% 100%;
-}
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
 
-@media(max-width: $desktop-width) {
-  .bg-wrap--header {
-    background-image: url("../img/girl-main.png"), url("../img/israel.png"), url("../img/town.png");
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 50% 100px, 50% 230px, 0 55px, ;
-    background-size: auto auto, 750px auto, 100% 100%;
-  }
-}
+  white-space: nowrap;
 
-@media (max-width: $tablet-width) {
-  .bg-wrap--header {
-    min-height: auto;
+  border: 0;
 
-    background-image: url("../img/girl-main-mobile.png"), url("../img/israel.png"), url("../img/town-mobile.png");
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: 50% 30px,50% 172px,0 30px;
-    background-size: auto auto, 347px auto, 100% 92.5%;
-  }
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }

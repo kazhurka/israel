@@ -4,10 +4,8 @@
   width: 100%;
   max-width: 1160px;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-right: 10px;
-  padding-bottom: 50px;
-  padding-left: 10px;
+  padding-top: 25px;
+  padding-bottom: 85px;
 }
 
 .info h2 {
@@ -17,17 +15,16 @@
   list-style: none;
   font-style: normal;
   font-weight: bold;
-  font-size: $montserrat;
   font-size: 40px;
   line-height: 49px;
+  font-family: $montserrat;
   text-align: center;
   color: $color-blue;
   text-transform: uppercase;
 }
 
 .info p {
-  width: 610px;
-  margin: 0;
+  width: 690px;
   margin: 0 auto;
   margin-bottom: 50px;
 
@@ -55,27 +52,45 @@
   overflow: hidden;
 }
 
-.info__wrap::after {
-  content: "";
+.info__wrap button {
   position: absolute;
-  top: 150px;
+  outline: none;
+  top: 178px;
   left: 50%;
   z-index: 1;
 
   width: 96px;
   height: 96px;
 
+  background-color: transparent;
   background-image: url("../img/play-button.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  border: none;
   transform: translate(-50%);
+  cursor: pointer;
 }
 
-@media(max-width: $tablet-width) {
+.info__wrap button:hover {
+  background-image: url("../img/play-button-hover.svg");
+}
+
+.info__wrap button:active {
+  background-image: url("../img/play-button-active.svg");
+}
+
+@media (max-width: $tablet-width) {
   .info {
     box-sizing: border-box;
+    padding-top: 29px;
+  }
+
+  .info h2 {
     padding-right: 15px;
     padding-left: 15px;
+    font-size: 31px;
+    line-height: 38px;
+    margin-bottom: 25px;
   }
 
   .info img {
@@ -83,8 +98,9 @@
   }
 
   .info p {
+    padding-left: 15px;
+    padding-right: 15px;
     width: auto;
-
     font-size: 16px;
     line-height: 160%;
     text-align: left;
@@ -95,14 +111,15 @@
     height: 224px;
 
     background-image: url("../img/video-photo.png");
-    background-position: 50%;
+    background-position: 65%;
     background-size: cover;
   }
 
-  .info__wrap::after {
-    top: 70px;
+  .info__wrap button {
+    top: 80px;
 
     width: 80px;
     height: 80px;
+    background-size: contain;
   }
 }

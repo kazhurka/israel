@@ -1,55 +1,68 @@
 .promo {
   position: relative;
-  box-sizing: border-box;
-  padding-bottom: 160px;
-  min-height: 700px;
+
   display: flex;
-  padding-top: 20px;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-
+  box-sizing: border-box;
+  min-height: 740px;
+  padding-top: 50px;
+  padding-bottom: 228px;
 }
 
 .promo b {
   width: 343px;
-  font-family: $fira-sans;
+
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
+  font-family: $fira-sans;
   text-align: center;
-  color: #ffffff;
+  color: $color-white;
 }
 
-.promo ::after {
-  transform: translate(-50%);
-  bottom: -20px;
+.promo__scroll {
+  position: absolute;
+  bottom: 65px;
   left: 50%;
-  content: "";
+
   width: 76px;
   height: 131px;
-  position: absolute;
+
+  background-color: transparent;
   background-image: url("../img/scroll-sign.svg");
+  border: none;
+  transform: translate(-50%);
 }
 
-@media (max-width: $tablet-width) {
+.promo__scroll:hover {
+  opacity: 70%;
+}
 
+.promo__scroll:active {
+  opacity: 50%;
+}
+
+@media (max-width: $desktop-width) {
   .promo {
-   padding: 0;
-   min-height: 550px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 530px;
+    padding: 0;
   }
 
   .promo b {
+    padding-top: 40px;
     width: 288px;
+
     font-size: 20px;
     line-height: 24px;
   }
 
-  .promo ::after {
-    bottom: 90px;
+  .promo__scroll {
+    bottom: 56px;
   }
 }
